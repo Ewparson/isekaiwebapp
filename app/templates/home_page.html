@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isekai Trainer</title>
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+/* Navbar styles */
+.navbar-custom { 
+  background-color: #333; 
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text { 
+  color: #fff; 
+}
+/* Header styles */
+.header {
+  padding: 100px; 
+  text-align: center; 
+  background: #1abc9c; 
+  color: white;
+  position: relative;
+}
+.header h1 {
+  font-size: 40px;
+}
+/* User icon styles */
+.user-login-icon {
+  color: white; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+/* Content styles */
+.content { 
+  padding: 20px; 
+}
+/* Footer styles */
+.footer { 
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 10px; 
+  position: relative; 
+  bottom: 0; 
+  width: 100%; 
+}
+/* Navbar alignment */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-item {
+  margin: 0 15px;
+}
+/* Flex container for aligning items */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.user-buttons {
+  display: flex;
+  gap: 10px;
+}
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container navbar-container">
+    <a class="navbar-brand" href="#">Serinity Studio</a>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Lore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Merch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+      </ul>
+      <div class="ml-auto user-buttons">
+        <a href="login" class="btn btn-primary">Login</a>
+        <a href="register" class="btn btn-secondary">Create Account</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <h1>Isekai Trainer</h1>
+    <p>April 12, 2026. Developer: Emaan</p>
+  </div>
+</header>
+<!-- Page Content -->
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Character Info/User Info</h2>
+      </div>
+    </div>
+    <!-- More rows and columns can be added as needed -->
+  </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; Serinity Studio 2026</p>
+  </div>
+</footer>
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% extends "base.html" %}
+
+{% block title %}Home - Isekai Trainer{% endblock %}
+
+{% block header %}Welcome to Isekai Trainer{% endblock %}
+
+{% block content %}
+<h2>Character Info/User Info</h2>
+{% endblock %}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isekai Trainer</title>
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+<!-- Link to your external CSS file -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- Your HTML content here -->
+
+</body>
+</html>
+
+/* Navbar styles */
+.navbar-custom { 
+  background-color: #333; 
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text { 
+  color: #fff; 
+}
+
+/* Header styles */
+.header {
+  padding: 100px; 
+  text-align: center; 
+  background: #1abc9c; 
+  color: white;
+  position: relative;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+/* User icon styles */
+.user-login-icon {
+  color: white; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+/* Content styles */
+.content { 
+  padding: 20px; 
+}
+
+/* Footer styles */
+.footer { 
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 10px; 
+  position: relative; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+/* Navbar alignment */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-item {
+  margin: 0 15px;
+}
+
+/* Flex container for aligning items */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+<style>
+  .user-login-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+  }
+</style>
